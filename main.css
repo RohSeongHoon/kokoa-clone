@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration-line: none;
+  color: #c3c3c3;
+}
+body {
+  background-color: #181818;
+  color: #c3c3c3;
+  position: relative;
+  font-size: 16px;
+  margin: 0px;
+  display: block;
+}
+hr {
+  margin: 2px;
+  border: 1px solid#3d3d3d;
+}
+
+.main-container {
+  display: grid;
+  width: 1080px;
+  margin: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(60, 30px);
+}
+.temp-box {
+  text-align: left;
+  font-size: 16px;
+}
+.top1-img {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
+.top1-img > img,
+span {
+  max-height: 30px;
+  max-width: 30px;
+  height: auto;
+  width: auto;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.frist-video {
+  grid-column: 1/6;
+  grid-row: 2/20;
+}
+.top2-img {
+  grid-column: 1/2;
+  grid-row: 21/22;
+}
+.top2-img > img,
+span {
+  max-height: 30px;
+  max-width: 30px;
+  height: auto;
+  width: auto;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.second-video {
+  grid-column: 1/3;
+  grid-row: 22/29;
+}
+.top3-img {
+  grid-column: 4/5;
+  grid-row: 21/22;
+}
+.top3-img > img,
+span {
+  max-height: 30px;
+  max-width: 30px;
+  height: auto;
+  width: auto;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+.third-video {
+  grid-column: 4/6;
+  grid-row: 22/29;
+}
+
+.actor-community {
+  grid-column: 1/3;
+  grid-row: 36/37;
+  font-size: 35px;
+  vertical-align: middle;
+  text-align: start;
+}
+.actor-community-content {
+  grid-column: 1/3;
+  grid-row: 37/45;
+}
+.actor-community-content > ul {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 20px;
+}
+
+.musical-community {
+  grid-column: 4/6;
+  grid-row: 36/ 37;
+  text-align: start;
+  font-size: 35px;
+}
+.musical-community-content {
+  grid-column: 4/6;
+  grid-row: 37/45;
+}
+.musical-community-content > ul {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 20px;
+}
+.vocal-community {
+  grid-column: 1/3;
+  grid-row: 46/48;
+  font-size: 35px;
+  vertical-align: middle;
+  text-align: start;
+}
+.vocal-community-content {
+  grid-column: 1/3;
+  grid-row: 47/ 55;
+  text-align: start;
+  font-size: 20px;
+}
+.vocal-community-content ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.performer-community {
+  grid-column: 4/6;
+  grid-row: 46/48;
+  font-size: 35px;
+  vertical-align: middle;
+  text-align: start;
+}
+.performer-community-content {
+  grid-column: 4/6;
+  grid-row: 47/ 55;
+  text-align: start;
+  font-size: 20px;
+}
+.performer-community-content ul {
+  list-style: none;
+  padding-left: 0px;
+}
