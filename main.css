@@ -1,3 +1,5 @@
+@import "./css/reset.css";
+@import "./header.css";
 * {
   box-sizing: border-box;
 }
@@ -24,9 +26,15 @@ main {
   display: flex;
   position: relative;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
   border-bottom: 1px solid #383838;
+}
+#new-video-container > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  padding: 0px;
+  justify-content: center;
 }
 .new-video {
   width: 500px;
@@ -37,6 +45,7 @@ main {
 .new-video > a {
   display: block;
   font-size: 25px;
+  text-align: center;
 }
 #video-head {
   margin-bottom: 0px;
@@ -44,20 +53,4 @@ main {
   font-size: 30px;
   text-align: center;
   color: aliceblue;
-}
-.community {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.community > a {
-  font-size: 40px;
-  display: block;
-}
-.community ul {
-  list-style: none;
-  display: block;
-}
-h2 {
-  display: block;
 }

@@ -1,0 +1,10 @@
+@import "./reset.css";
+
+.welcome-header {
+  display: flex;
+  justify-content: center;
+  margin: 90px 0px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px;
+}
