@@ -8,7 +8,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-bottom: 1px solid #383838;
 }
 #logo {
@@ -33,12 +33,13 @@
 }
 #search button {
   width: 60px;
-  height: 35px;
+  height: 40px;
   position: absolute;
   margin-left: -60px;
   background-color: #323232;
   border: 0px;
   padding: 0px;
+  align-items: center;
 }
 #search button span {
   font-size: 15px;
