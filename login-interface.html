@@ -9,15 +9,22 @@
   </head>
   <body>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">로그인</h1>
+      <h1 class="welcome-header__title">로고</h1>
       <p class="welcom-header__text">환영합니다! 예술인들의 커뮤니티입니다!</p>
     </header>
     <form class="login-form">
       <input type="text" required placeholder="아이디" />
       <input type="password" required placeholder="비밀번호" />
       <input type="submit" value="로그인" />
-      <input type="submit" value="회원가입" />
-      <a href=""><span>아이디/ 비밀번호 찾기</span></a>
     </form>
+    <div class="login-related">
+      <a class="login-related__sign-up" href="./sign-up.html"
+        ><span>회원가입</span></a
+      >
+      <a class="login-related__find-id" href="#"><span>아이디 찾기</span></a>
+      <a class="login-related__find-password" href="#"
+        ><span>비밀번호 찾기</span></a
+      >
+    </div>
   </body>
 </html>

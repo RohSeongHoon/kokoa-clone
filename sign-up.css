@@ -1,0 +1,13 @@
+body {
+  position: relative;
+  width: 1130px;
+  padding: 20px 30px;
+  margin: 0px auto;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid black;
+}

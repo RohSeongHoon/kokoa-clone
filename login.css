@@ -46,6 +46,7 @@
 .login-related__find-password {
   padding: 0px 20px;
   border-right: 1px solid black;
+  font-size: 18px;
 }
 .login-related__find-password {
   border-right: none;
