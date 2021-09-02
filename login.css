@@ -1,49 +1,56 @@
+.login {
+  margin: 90px 400px;
+  padding: 30px;
+  border: 1px solid #706e6e;
+}
+
 .welcome-header {
-  margin: 90px 0px;
-  text-align: center;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-weight: 600;
+  padding: 0px 5px;
 }
 .welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 60px;
 }
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
+.welcom-header__text {
+  color: #706e6e;
 }
-#login-form {
+.login-form {
   display: flex;
   flex-direction: column;
-  margin: 0px 30px;
+  margin: 0px 60px;
 }
-#login-form input {
+.login-form input {
   padding: 15px 0px;
-  border: none;
   font-size: 18px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 25px;
+  border: none;
+  padding-bottom: 10px 20px;
+  border-bottom: 1px solid black;
+  margin: 10px 30px;
 }
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
+.login-form input[type="submit"] {
+  border-bottom: none;
 }
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+.login-related {
+  margin: 60px 20px;
+  display: flex;
+  justify-content: center;
 }
-#login-form input:focus {
-  border-color: yellow;
+.login-related a {
+  text-decoration-line: none;
+  color: #5b5b5b;
 }
-#login-form input[type="submit"] {
-  background-color: yellow;
-  cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 10px;
+.login-related__sign-up,
+.login-related__find-id,
+.login-related__find-password {
+  padding: 0px 20px;
+  border-right: 1px solid black;
+  font-size: 18px;
 }
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+.login-related__find-password {
+  border-right: none;
 }
