@@ -5,26 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인</title>
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">로고</h1>
-      <p class="welcom-header__text">환영합니다! 예술인들의 커뮤니티입니다!</p>
-    </header>
-    <form class="login-form">
-      <input type="text" required placeholder="아이디" />
-      <input type="password" required placeholder="비밀번호" />
-      <input type="submit" value="로그인" />
-    </form>
-    <div class="login-related">
-      <a class="login-related__sign-up" href="./sign-up.html"
-        ><span>회원가입</span></a
-      >
-      <a class="login-related__find-id" href="#"><span>아이디 찾기</span></a>
-      <a class="login-related__find-password" href="#"
-        ><span>비밀번호 찾기</span></a
-      >
+    <nav id="navbar-contanier">
+      <div id="logo">
+        <h1><a href="/index.html">예체능 커뮤니티</a></h1>
+      </div>
+      <form id="search">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <button type="submit"><span>검색</span></button>
+      </form>
+      <div id="login-button">
+        <a href="./login-interface.html" rel="login"><span>로그인</span> </a>
+      </div>
+    </nav>
+    <nav id="category-bar">
+      <ul id="main-menu-items">
+        <li><a href="./actor.html" rel="actor">연기</a></li>
+        <li><a href="./musical.html" rel="musical">뮤지컬</a></li>
+        <li><a href="./vocald.html" rel="vocald">보컬</a></li>
+        <li><a href="./performer.html" rel="performer">연주자</a></li>
+      </ul>
+    </nav>
+    <div class="login__back-ground-img"></div>
+    <div class="login">
+      <div class="welcome-header">
+        <h1 class="welcome-header__title">로고</h1>
+        <p class="welcom-header__text">
+          환영합니다! 예술인들의 커뮤니티입니다!
+        </p>
+      </div>
+      <form action="" method="POST" class="login-form">
+        <input name="id" type="text" required placeholder="아이디" />
+        <input
+          name="password"
+          type="password"
+          required
+          placeholder="비밀번호"
+        />
+        <input type="submit" value="로그인" />
+      </form>
+      <div class="login-related">
+        <a class="login-related__sign-up" href="./sign-up.html"
+          ><span>회원가입</span></a
+        >
+        <a class="login-related__find-id" href="#"><span>아이디 찾기</span></a>
+        <a class="login-related__find-password" href="#"
+          ><span>비밀번호 찾기</span></a
+        >
+      </div>
     </div>
   </body>
 </html>

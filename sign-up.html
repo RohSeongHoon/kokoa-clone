@@ -1,65 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/sign-up.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>회원가입</title>
   </head>
   <body>
+    <nav id="navbar-contanier">
+      <div id="logo">
+        <h1><a href="/index.html">예체능 커뮤니티</a></h1>
+      </div>
+      <form id="search">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <button type="submit"><span>검색</span></button>
+      </form>
+      <div id="login-button">
+        <a href="./login-interface.html" rel="login"><span>로그인</span> </a>
+      </div>
+    </nav>
+    <nav id="category-bar">
+      <ul id="main-menu-items">
+        <li><a href="./actor.html" rel="actor">연기</a></li>
+        <li><a href="./musical.html" rel="musical">뮤지컬</a></li>
+        <li><a href="./vocald.html" rel="vocald">보컬</a></li>
+        <li><a href="./performer.html" rel="performer">연주자</a></li>
+      </ul>
+    </nav>
+
     <header>
-      <h1>회원가입</h1>
+      <h1 class="sign-up__title">회원가입</h1>
     </header>
-    <form class="member">
-      <div class="member__id">
-        <span>아이디:</span>
-        <input type="text" placeholder="아이디" />
-        <input type="submit" value="중복검사" src="#" />
-      </div>
-      <div class="member__password">
-        <span>비밀번호:</span>
-        <input type="text" placeholder="8자이상,특수문자포함" minlength="8" />
-      </div>
-      <div class="member__password--check">
-        <span>비밀번호 확인:</span>
-        <input type="text" placeholder="8자이상,특수문자포함" minlength="8" />
-        <!-- 비밀번호 확인 추후에 구현 -->
-      </div>
-      <div class="member__name">
-        <span>이름:</span>
-        <input type="text" placeholder="이름" />
-      </div>
-      <div class="member__nick-name">
-        <span>닉네임:</span>
-        <input type="text" placeholder="닉네임" />
-        <input type="submit" value="중복검사" />
-      </div>
-      <div class="member__gender">
-        <span>성별:</span>
-        <input id="gender-check__man" type="checkbox" />
-        <label for="gender-check__man"><span>남</span></label>
-        <input id="gender-check__woman" type="checkbox" />
-        <label for="gender-check__woman"><span>여</span></label>
-      </div>
-      <div class="member__email">
-        <span>이메일:</span>
-        <input type="email" placeholder="이메일" />
-        <input type="submit" value="인증하기" />
-      </div>
-      <div class="member__email--check">
-        <span>인증번호 입력:</span>
-        <input type="text" placeholder="인증번호" />
-        <input type="submit" value="확인" />
-        <!-- 이메일 인증은 추후에 완벽히 구현 -->
-      </div>
-      <div class="member__picture">
-        <!-- 사진올리는것 추후에 구현 -->
-      </div>
-      <div class="member__about-me">
-        <label for="about-me">자기소개(선택)</label>
-        <textarea id="about-me" cols="50" rows="10"></textarea>
-      </div>
+
+    <form action="" method="POST" class="sign-up">
+      <ul class="sign-up__list">
+        <li class="sign-up__info">
+          <span class="sign-up__info--text">아이디:</span>
+          <input
+            class="sign-up__info--input"
+            name="id"
+            type="text"
+            placeholder="아이디"
+          />
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__info--text">비밀번호:</span>
+          <input
+            class="sign-up__info--input"
+            name="password"
+            type="text"
+            placeholder="8자이상,특수문자포함"
+            minlength="8"
+          />
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__password--text">비밀번호 확인:</span>
+          <input
+            class="sign-up__info--input"
+            name="password-check"
+            type="text"
+            placeholder="8자이상,특수문자포함"
+            minlength="8"
+          />
+          <!-- 비밀번호 확인 추후에 구현 -->
+        </li>
+      </ul>
+      <ul class="sign-up__list">
+        <li class="sign-up__info">
+          <span class="sign-up__info--text">이름:</span>
+          <input
+            class="sign-up__info--input"
+            name="name"
+            type="text"
+            placeholder="이름"
+          />
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__info--text">닉네임:</span>
+          <input
+            class="sign-up__info--input"
+            name="nick-name"
+            type="text"
+            placeholder="닉네임"
+          />
+          <!-- 중복검사 추가 -->
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__info--text">성별:</span>
+          <input class="sign-up__info--gender-check" type="checkbox" />
+          <label for="sign-up__info--gender-man"
+            ><span class="sign-up__infor--gender-man">남</span></label
+          >
+          <input class="sign-up__infor--gender-check" type="checkbox" />
+          <label for="sign-up__infor--gender-check"
+            ><span class="sign-up__infor--text">여</span></label
+          >
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__infor--text">이메일:</span>
+          <input
+            class="sign-up__info--input"
+            name="email"
+            type="email"
+            placeholder="이메일"
+          />
+          <input class="sign-up__info--input" type="submit" value="인증하기" />
+        </li>
+        <li class="sign-up__info">
+          <span class="sign-up__infor--text">인증번호 입력:</span>
+          <input
+            class="sign-up__info--input"
+            type="text"
+            placeholder="인증번호"
+          />
+          <input class="sign-up__infor--btn" type="submit" value="확인" />
+          <!-- 이메일 인증은 추후에 완벽히 구현 -->
+        </li>
+        <li class="sign-up__info">
+          <!-- 사진올리는것 추후에 구현 -->
+        </li>
+        <li class="sign-up__info">
+          <label for="about-me">자기소개(선택)</label>
+          <textarea
+            name="about-me"
+            id="about-me"
+            cols="50"
+            rows="10"
+          ></textarea>
+        </li>
+      </ul>
     </form>
   </body>
 </html>
