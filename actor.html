@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head></head>
+  <head>
     <meta charset="utf-8" />
     <link href="../css/styles.css" rel="stylesheet" />
     <meta
@@ -13,26 +13,110 @@
     <meta name="description" content="예체능인들의 커뮤니티입니다" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
-    <body>
-      <nav id="navbar-contanier">
-        <div id="logo">
-          <h1><a href="/index.html">연기 커뮤니티</a></h1>
-        </div>
-        <form id="search">
-          <input type="text" placeholder="검색어를 입력하세요">
-          <button type="submit"><span>검색</span></button>
-        </form>
-        <div id="login-button">
-          <a href="./login-interface.html" rel="login"><p>로그인</p></a>
-        </div>
-        </nav>
-        <nav id="category-bar">
-          <ul id="main-menu-items">
-            <li><a href="/test/community/actor.html" rel="actor">연기</a></li>
-            <li><a href="/test/community/musical.html" rel="musical">뮤지컬</a></li>
-            <li><a href="/test/community/vocald.html" rel="vocald">보컬</a></li>
-            <li><a href="/test/community/performer.html" rel="performer">연주자</a></li>
+  <body>
+    <nav id="navbar-container">
+      <div id="logo">
+        <h1><a href="/index.html">연기 커뮤니티</a></h1>
+      </div>
+      <form id="search">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <button type="submit"><span>검색</span></button>
+      </form>
+      <div id="login-button">
+        <a href="./login-interface.html" rel="login"><p>로그인</p></a>
+      </div>
+    </nav>
+    <nav class="category-bar">
+      <ul class="category-bar__container">
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/actor.html"
+            rel="actor"
+            >연기</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">연기 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">대본</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">프로필함</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
           </ul>
-      </nav>
-      <div></div>
-     </body>
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/musical.html"
+            rel="musical"
+            >뮤지컬</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">뮤지컬 영상</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">뮤지컬 대본</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">프로필함</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/vocald.html"
+            rel="vocald"
+            >보컬</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">보컬 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">악보</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/performer.html"
+            rel="performer"
+            >연주자</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">연주 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">악보</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
