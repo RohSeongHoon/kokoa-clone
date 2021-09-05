@@ -1,23 +1,11 @@
-@import "./css/reset.css";
-@import "./header.css";
-
-a {
-  text-decoration-line: none;
-  color: #c3c3c3;
-}
-body {
-  background-color: #181818;
-  color: #c3c3c3;
-  position: relative;
-  font-size: 16px;
-  margin: 0px;
-  display: block;
-}
 main {
   position: relative;
   width: 1130px;
   padding: 20px 30px;
   margin: 0px auto;
+}
+main a {
+  color: black;
 }
 
 #new-video-container {
@@ -53,7 +41,7 @@ main {
   margin-top: 55px;
   font-size: 30px;
   text-align: center;
-  color: aliceblue;
+  color: black;
 }
 .community__list {
   display: flex;
