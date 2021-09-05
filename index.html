@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head></head>
+  <head>
     <meta charset="utf-8" />
     <link href="./css/styles.css" rel="stylesheet" />
     <meta
@@ -14,33 +14,110 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
   <body>
-   
-      <nav id="navbar-contanier">
-        <div id="logo">
-          <h1><a href="/index.html">예체능 커뮤니티</a></h1>
-        </div>
-        <form id="search">
-          <input type="text" placeholder="검색어를 입력하세요">
-          <button type="submit"><span>검색</span></button>
-        </form>
-        <div id="login-button">
-          <a href="./login-interface.html" rel="login"><span>로그인</span>
-          
-          </a>
-        </div>
-        </nav>
-        <nav id="category-bar">
-          <ul id="main-menu-items">
-            <li><a href="./actor.html" rel="actor">연기</a></li>
-            <li><a href="./musical.html" rel="musical">뮤지컬</a></li>
-            <li><a href="./vocald.html" rel="vocald">보컬</a></li>
-            <li><a href="./performer.html" rel="performer">연주자</a></li>
+    <nav id="navbar-container">
+      <div id="logo">
+        <h1><a href="/index.html">연기 커뮤니티</a></h1>
+      </div>
+      <form id="search">
+        <input type="text" placeholder="검색어를 입력하세요" />
+        <button type="submit"><span>검색</span></button>
+      </form>
+      <div id="login-button">
+        <a href="./login-interface.html" rel="login"><p>로그인</p></a>
+      </div>
+    </nav>
+    <nav class="category-bar">
+      <ul class="category-bar__container">
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/actor.html"
+            rel="actor"
+            >연기</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">연기 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">대본</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">프로필함</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
           </ul>
-        </nav>
-      
-     
-    
-    
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/musical.html"
+            rel="musical"
+            >뮤지컬</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">뮤지컬 영상</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">뮤지컬 대본</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">프로필함</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/vocald.html"
+            rel="vocald"
+            >보컬</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">보컬 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">악보</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+        <li class="category-bar__list">
+          <a
+            class="category-bar__list--title"
+            href="/test/community/performer.html"
+            rel="performer"
+            >연주자</a
+          >
+          <ul class="categort-bar__content">
+            <li class="category-bar__content--item">
+              <a href="#">연주 영상</a>
+            </li>
+            <li class="category-bar__content--item"><a href="#">악보</a></li>
+            <li class="category-bar__content--item">
+              <a href="#">오디션 정보</a>
+            </li>
+            <li class="category-bar__content--item">
+              <a href="#">자유 게시판</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <main>
       <h3 id="video-head">new</h3>
       <div id="new-video-container">
@@ -48,25 +125,25 @@
           <li>
           <div class="new-video">
           <video src="" controls ></video>
-          <a href="./actor.html">작성자: 제목</a>
+          <a href="./community/actor.html">작성자: 제목</a>
           </div>
         </li>  
         <li>
           <div class="new-video">
           <video class="new-video" src="" controls></video>
-          <a href="./actor.html">작성자: 제목</a>
+          <a href="./community/actor.html">작성자: 제목</a>
           </div>
         </li>
         <li>
           <div class="new-video">
           <video class="new-video" src="" controls ></video>
-          <a href="./actor.html">작성자: 제목</a>
+          <a href="./community/actor.html">작성자: 제목</a>
           </div>
         </li>
         <li>
           <div class="new-video">
           <video class="new-video" src="" controls ></video>
-          <a href="./actor.html">작성자: 제목</a>
+          <a href="./community/actor.html">작성자: 제목</a>
         </li>
           </div>
         </ul>
@@ -74,48 +151,48 @@
       <div class="community">
         <ul class="community__list">
          <div class="community__list--item">
-            <a href="./actor.html" rel="actor-community">배우</a>
+            <a href="./community/actor.html" rel="actor-community">배우</a>
             <ul>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
-             <li><a href="./actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
+             <li><a href="./community/actor.html">연기 관련 내용들 </a></li>
             </ul>
            </div>
          <div class="community__list--item">
-           <a href="./musical.html" rel="musical-coummunity">뮤지컬</a>
+           <a href="./community/musical.html" rel="musical-coummunity">뮤지컬</a>
            <ul>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
-             <li><a href="./musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
+             <li><a href="./community/musical.html">뮤지컬 관련 내용</a></li>
            </ul>
          </div>
          <div class="community__list--item">
-           <a href="./vocald.html" rel="vocal-community"> 보컬 </a>
+           <a href="./community/vocald.html" rel="vocal-community"> 보컬 </a>
             <ul>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
-             <li><a href="./vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
+             <li><a href="./community/vocald.html">보컬 관련 내용</a></li>
              </ul>
         
             </div>
             <div class="community__list--item">
-            <a href="./performer.html">연주자</a>
+            <a href="./community/performer.html">연주자</a>
             <ul>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
-             <li><a href="./performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
+             <li><a href="./community/performer.html">악기 관련 내용</a></li>
              </ul>
            </div>
        </div>
