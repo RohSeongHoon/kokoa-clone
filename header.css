@@ -65,11 +65,13 @@
   position: sticky;
   z-index: 999;
   top: 0px;
+  background-color: #212121;
 }
 
 .category-bar__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  width: 90%;
   padding: 0px;
   margin-top: 0px;
   list-style: none;
@@ -80,9 +82,7 @@
   height: 55px;
   color: #121212;
   line-height: 50px;
-  margin: 0 auto;
-  text-align: center;
-  width: 140px;
+  text-align: start;
 }
 .category-bar__list--title {
   position: relative;
