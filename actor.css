@@ -1,0 +1,21 @@
+.actor-main {
+  width: 1130px;
+  height: 1000px;
+  margin: 0px auto;
+}
+.side-navbar {
+  position: sticky;
+  top: 50px;
+}
+.side-navbar__container {
+  width: 13%;
+  list-style: none;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0px;
+  border: 1px solid orange;
+  align-items: center;
+}
+.side-navbar__container--list {
+  margin: 15px 0px;
+}
