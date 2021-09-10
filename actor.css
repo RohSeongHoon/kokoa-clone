@@ -1,21 +1,38 @@
-.actor-main {
+.community-main {
   width: 1130px;
-  height: 1000px;
   margin: 0px auto;
+  display: flex;
+  position: relative;
+  height: 7000px;
 }
 .side-navbar {
-  position: sticky;
   top: 50px;
+  padding: 3px;
+  position: sticky;
+  height: 100px;
+  width: 20%;
 }
 .side-navbar__container {
-  width: 13%;
   list-style: none;
-  display: inline-flex;
-  flex-direction: column;
   padding: 0px;
-  border: 1px solid orange;
-  align-items: center;
+  border: 1px solid red;
 }
 .side-navbar__container--list {
-  margin: 15px 0px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+.side-navbar__container--a {
+  color: black;
+}
+.video {
+}
+.video__container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+}
+.video__list--video {
+  width: 450px;
 }
