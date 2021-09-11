@@ -34,5 +34,11 @@
   gap: 30px;
 }
 .video__list--video {
+  display: inline-block;
   width: 450px;
+}
+.video__list--a {
+  display: block;
+  color: black;
+  font-size: 20px;
 }
