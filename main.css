@@ -13,7 +13,7 @@ main a {
   position: relative;
   justify-content: center;
   border-bottom: 1px solid #383838;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 80px;
 }
 #new-video-container > ul {
@@ -38,7 +38,7 @@ main a {
 }
 #video-head {
   margin-bottom: 0px;
-  margin-top: 55px;
+  margin-top: 15px;
   font-size: 30px;
   text-align: center;
   color: black;
@@ -50,7 +50,9 @@ main a {
   margin-top: 100px;
 }
 .community__list--item {
-  width: 50%;
+  width: 49%;
+  border: 1px solid black;
+  margin: 3px;
 }
 .community__list--item > a {
   font-size: 50px;
