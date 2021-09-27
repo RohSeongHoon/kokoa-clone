@@ -1,0 +1,27 @@
+{
+    "video":{
+        "videoTitle": "String",
+        "videoExplanation":"String"                
+    },
+
+    "communityPost":[{
+        "postTitle":"String",
+        "postWriter":"String",
+        "postCategory":"String",
+        "postContent":"String",
+        "postVideo":"url",
+        "postComment":"String"
+    }] ,
+    "signUp":{
+        "id":"String",
+        "password":"String",
+        "checkPassword":"String",
+        "gender":"String",
+        "name":"String",
+        "nickName":"String",
+        "email":"String",
+        "aboutMe":"String",
+        "aboutMeImg":"img",
+        "aboutMeVideo":"video"
+    }
+}
