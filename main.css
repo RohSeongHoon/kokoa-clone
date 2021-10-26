@@ -8,39 +8,33 @@ main a {
   color: black;
 }
 
-#new-video-container {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  border-bottom: 1px solid rgb(212, 208, 208);
-  padding-top: 10px;
-  padding-bottom: 80px;
-}
-#new-video-container > ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 30px;
-  padding: 0px;
-
-  justify-content: center;
-}
-.new-video {
-  width: 500px;
-}
-.new-video > video {
-  width: 100%;
-}
-.new-video > a {
-  display: block;
-  font-size: 25px;
-  text-align: start;
-}
-#video-head {
+.video-head {
   margin-bottom: 0px;
   margin-top: 15px;
   font-size: 30px;
   text-align: center;
+  color: black;
+}
+.video-container {
+  border-bottom: 1px solid rgb(212, 208, 208);
+  padding-bottom: 75px;
+}
+.video-lists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.video-lists__item {
+  width: 49%;
+  height: 340px;
+}
+.video-list__item--video {
+  width: 100%;
+}
+.video-list__item--a {
+  display: block;
+  padding: 6px;
+  font-size: 17px;
   color: black;
 }
 .community__list {
