@@ -17,7 +17,7 @@
     <nav id="navbar-container">
       <div id="logo">
         <h1><a class="logo__a" href="/index.html">배우 커뮤니티</a></h1>
-      </div>
+      </div> 
       <form id="search">
         <input type="text" placeholder="검색어를 입력하세요" />
         <button type="submit"><span>검색</span></button>
@@ -28,7 +28,7 @@
     </nav>
     <nav class="category-bar">
       <ul class="category-bar__container">
-        <li id="write-button" class="category-bar__list">
+        <li id="write-button" class="category-bar__list"></li>
         <a
         class="category-bar__list--title"
         href="./write.html"
@@ -144,19 +144,19 @@
         <ul class="video-lists" >
           <li class="video-lists__item">
           <video class="video-list__item--video" src="" controls ></video>
-          <a class="video-list__item--a" href="./community/actor.html">작성자: 제목</a>
+          <a class="video-list__item--a"id="video__a1" href="./community/actor.html">작성자: 제목</a>
         </li>  
         <li class="video-lists__item">
           <video class="video-list__item--video" class="video-list__item" src="" controls></video>
-          <a class="video-list__item--a" href="./community/actor.html">작성자: 제목</a>
+          <a class="video-list__item--a"id="video__a2" href="./community/actor.html">작성자: 제목</a>
         </li>
         <li class="video-lists__item">
           <video class="video-list__item--video" class="video-list__item" src="" controls ></video>
-          <a class="video-list__item--a" href="./community/actor.html">작성자: 제목</a>
+          <a class="video-list__item--a"id="video__a3" href="./community/actor.html">작성자: 제목</a>
         </li>
         <li class="video-lists__item">
           <video class="video-list__item--video" class="video-list__item" src="" controls ></video>
-          <a class="video-list__item--a" href="./community/actor.html">작성자: 제목</a>
+          <a class="video-list__item--a"id="video__a4" href="./community/actor.html">작성자: 제목</a>
         </li>
         </ul>
       </div>
@@ -211,11 +211,18 @@
        </ul>
        </div>
     </main>
-    <script src="./jqurey/jquery-3.6.0.min.js"></script>
-   <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $.get('http://localhost:3000/main',function(data){
+          for(var i = 0; i< data.videos.length; i++){
+             var video = data.videos[i];
+             $('#video__a' + (i+1)).text(video.videoTitle);
+
+          }
+        })
+      })
+    </script>
  </body>
  <footer></footer>
 </html>
