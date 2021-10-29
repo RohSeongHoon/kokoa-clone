@@ -160,34 +160,32 @@
         </li>
         </ul>
       </div>
-      <div class="community">
-        <ul class="community__list">
-         <div class="community__list--item">
-            <a href="./community/actor.html" id="communityTitle1" rel="actor-community">배우</a>
-            <ul id="content1">
-             
+      <div class="community" id="community">
+        <ul class="community__list"id="community__list">
+          <!-- <div class="community__list--item" id="community__list--item1">
+            <a href="./community/musical.html" id="communityTitle1" rel="actor-coummunity">연기</a>
+            <ul id="content1">           
             </ul>
            </div>
-         <div class="community__list--item">
+         <div  class="community__list--item" id="community__list--item2">
            <a href="./community/musical.html" id="communityTitle2" rel="musical-coummunity">뮤지컬</a>
            <ul id="content2">
-             
            </ul>
          </div>
-         <div class="community__list--item">
+         <div class="community__list--item" id="community__list--item3" >
            <a href="./community/vocald.html" id="communityTitle3" rel="vocal-community"> 보컬 </a>
             <ul id="content3">
              
              </ul>
         
             </div>
-            <div class="community__list--item">
+            <div class="community__list--item" id="community__list--item4" >
             <a href="./community/performer.html" id="communityTitle4">연주자</a>
             <ul id="content4">
             
              </ul>
-           </div>
-       </div>
+           </div> -->
+       
        </ul>
        </div>
     </main>
@@ -211,10 +209,12 @@
       $.get('http://localhost:3000/posts',function(data) {
           for(var i =0; i<data.communities.length; i++){
             var community = data.communities[i];
+            $('#community__list').append('<div class="community__list--item" id="community__list--item"'+(i+1)+'">'+'<a href='+community.link+' id="communityTitle'+(i+1)+'"rel="'+community.category+'-coummunity">'+community.categoryKr+'</a>'+'<ul id="content'+(i+1)+'">'+'</ul></div>')
             for(var j= 0; j<community.contents.length; j++){
               var content = community.contents[j];
               $('#content'+ (i+1)).append(' <li><a href='+ content.communityUrl+'>'+content.postTitle+'</a></li>')
             }
+            
           }
           console.log(community);
           //메인 화면에 커뮤니티 카테고리 내부에 데이터 채우기 
