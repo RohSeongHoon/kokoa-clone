@@ -141,23 +141,8 @@
      
       <h3 class="video-head">new</h3>
       <div class="video-container">
-        <ul class="video-lists" >
-          <li class="video-lists__item">
-            <iframe class="video-list__item--video" id="video__url1"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <a class="video-list__item--a" id="video__a1" href="./community/actor.html">작성자: 제목</a>
-        </li>  
-        <li class="video-lists__item">
-          <iframe class="video-list__item--video" id="video__url1" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <a class="video-list__item--a"id="video__a2" href="./community/actor.html">작성자: 제목</a>
-        </li>
-        <li class="video-lists__item">
-          <iframe class="video-list__item--video" id="video__url3"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <a class="video-list__item--a"id="video__a3" href="./community/actor.html">작성자: 제목</a>
-        </li>
-        <li class="video-lists__item">
-          <iframe class="video-list__item--video" id="video__url4"  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <a class="video-list__item--a"id="video__a4" href="./community/actor.html">작성자: 제목</a>
-        </li>
+        <ul id="video-lists" class="video-lists" >
+          
         </ul>
       </div>
       <div class="community" id="community">
@@ -196,15 +181,12 @@
       $.get("http://localhost:3000/videos", function (data) {
         for (var i = 0; i < data.videos.length; i++) {
           var video = data.videos[i];
-          $("#video__a" + (i + 1)).text(video.videoTitle);
-          $("#video__url" + (i + 1)).attr("src", video.videoUrl);
+          console.log(video);
+         $('#video-lists').append('<li class="video-lists__item"><iframe class="video-list__item--video" id="video__url'+(i+1)+'"  src='+ video.videoUrl +' title="YouTube video player"></iframe><a class="video-list__item--a" id="video__a'+(i+1)+'" href="./community/actor.html">' + video.videoTitle + '</a></li>')
         }
       });
 
-      //카테고리 이름도 json데이터로 받아와야함 
-      //카테고리를 한글로 쓸거면 키마지막에 kr붙이기 
-      //div에 아이디값을 주고 내부에 반복되는 데이터 지우기 
-      //
+      
 
       $.get('http://localhost:3000/posts',function(data) {
           for(var i =0; i<data.communities.length; i++){
@@ -216,10 +198,15 @@
             }
             
           }
-          console.log(community);
+          
           //메인 화면에 커뮤니티 카테고리 내부에 데이터 채우기 
           //ul 내부에 데이터의 값만큼 li를 생성 
           //li를 생성하면서 id값고 데이터 넣기 
+
+          //카테고리 이름도 json데이터로 받아와야함 
+          //카테고리를 한글로 쓸거면 키마지막에 kr붙이기 
+          //div에 아이디값을 주고 내부에 반복되는 데이터 지우기 
+          //
         });
     });
     </script>
