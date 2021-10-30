@@ -140,10 +140,8 @@
     <main>
      
       <h3 class="video-head">new</h3>
-      <div class="video-container">
-        <ul id="video-lists" class="video-lists" >
-          
-        </ul>
+      <div class="video-container" id="video-container">
+       
       </div>
       <div class="community" id="community">
         <ul class="community__list"id="community__list">
@@ -179,6 +177,7 @@
     <script>
     $(document).ready(function () {
       $.get("http://localhost:3000/videos", function (data) {
+        $('#video-container').append(' <ul id="video-lists" class="video-lists" ></ul>')
         for (var i = 0; i < data.videos.length; i++) {
           var video = data.videos[i];
           console.log(video);
