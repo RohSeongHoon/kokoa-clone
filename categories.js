@@ -29,8 +29,22 @@ var musicalCategory = [
     ],
   },
 ];
-var vocalCategory = [];
-var performerCategory = [];
+var vocalCategory = [
+  { category: "vocal" },
+  { categoryKr: "보컬" },
+  { link: "../test/community/vocal.html" },
+  {
+    contents: [{ videoPosts: "#" }, { auditionPosts: "#" }, { freePosts: "#" }],
+  },
+];
+var performerCategory = [
+  { category: "performer" },
+  { categoryKr: "연주자 " },
+  { link: "../test/community/performer.html" },
+  {
+    contents: [{ videoPosts: "#" }, { auditionPosts: "#" }, { freePosts: "#" }],
+  },
+];
 
 app.use(cors());
 
