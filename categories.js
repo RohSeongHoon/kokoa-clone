@@ -16,7 +16,19 @@ var actorCategory = [
     ],
   },
 ];
-var musicalCategory = [];
+var musicalCategory = [
+  { category: "musical" },
+  { categoryKr: "뮤지컬" },
+  { link: "../test/community/musical.html" },
+  {
+    contents: [
+      { videoPosts: "#" },
+      { profileBox: "#" },
+      { auditionPosts: "#" },
+      { freePosts: "#" },
+    ],
+  },
+];
 var vocalCategory = [];
 var performerCategory = [];
 
