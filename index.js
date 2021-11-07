@@ -2,68 +2,140 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const port = 3000;
+
 var categories = [
   {
-    write: [
-      { category: "write" },
-      { categoryKr: "글쓰기" },
-      { link: "./write.html" },
-    ],
-  },
-  {
-    actorCategories: [
-      { category: "actor" },
-      { categoryKr: "배우" },
-      { link: "../test/community/actor.html" },
+    category: "actor",
+    categoryKr: "연기",
+    contents: [
       {
-        contents: [
-          { videoPosts: "./community/actor-post-main.html" },
-          { profileBox: "#" },
-          { auditionPosts: "#" },
-          { freePosts: "#" },
+        videoPost: [
+          { postLink: "#" },
+          { postName: "actorVideo" },
+          { postNameKr: "연기영상" },
+        ],
+      },
+      {
+        profileBox: [
+          { postLink: "#" },
+          { postName: "profileBox" },
+          { postNameKr: "프로필함" },
+        ],
+      },
+      {
+        audition: [
+          { postLink: "#" },
+          { postName: "audition" },
+          { postNameKr: "오디션정보" },
+        ],
+      },
+      {
+        freePost: [
+          { postLink: "#" },
+          { postName: "freePost" },
+          { postNameKr: "자유게시판" },
         ],
       },
     ],
   },
   {
-    musicalCategory: [
-      { category: "musical" },
-      { categoryKr: "뮤지컬" },
-      { link: "../test/community/musical.html" },
+    category: "musical",
+    categoryKr: "뮤지컬",
+    contents: [
       {
-        contents: [
-          { videoPosts: "#" },
-          { profileBox: "#" },
-          { auditionPosts: "#" },
-          { freePosts: "#" },
+        videoPost: [
+          { postLink: "#" },
+          { postName: "musicalVideo" },
+          { postNameKr: "뮤지컬영상" },
+        ],
+      },
+      {
+        profileBox: [
+          { postLink: "#" },
+          { postName: "profileBox" },
+          { postNameKr: "프로필함" },
+        ],
+      },
+      {
+        audition: [
+          { postLink: "#" },
+          { postName: "audition" },
+          { postNameKr: "오디션정보" },
+        ],
+      },
+      {
+        freePost: [
+          { postLink: "#" },
+          { postName: "freePost" },
+          { postNameKr: "자유게시판" },
         ],
       },
     ],
   },
   {
-    vocalCategory: [
-      { category: "vocal" },
-      { categoryKr: "보컬" },
-      { link: "../test/community/vocal.html" },
+    category: "vocal",
+    categoryKr: "보컬",
+    contents: [
       {
-        contents: [
-          { videoPosts: "#" },
-          { auditionPosts: "#" },
-          { freePosts: "#" },
+        videoPost: [
+          { postLink: "#" },
+          { postName: "vocalVideo" },
+          { postNameKr: "보컬영상" },
+        ],
+      },
+      {
+        profileBox: [
+          { postLink: "#" },
+          { postName: "profileBox" },
+          { postNameKr: "프로필함" },
+        ],
+      },
+      {
+        audition: [
+          { postLink: "#" },
+          { postName: "audition" },
+          { postNameKr: "오디션정보" },
+        ],
+      },
+      {
+        freePost: [
+          { postLink: "#" },
+          { postName: "freePost" },
+          { postNameKr: "자유게시판" },
         ],
       },
     ],
   },
   {
-    performerCategory: [
-      { category: "performer" },
-      { categoryKr: "연주자 " },
-      { link: "../test/community/performer.html" },
+    category: "performer",
+    categoryKr: "연주자",
+    contents: [
       {
-        contents: [
-          { videoPosts: "#" },
-          { auditionPosts: "#" },
-          { freePosts: "#" },
+        videoPost: [
+          { postLink: "#" },
+          { postName: "performerVideo" },
+          { postNameKr: "연주영상" },
+        ],
+      },
+      {
+        profileBox: [
+          { postLink: "#" },
+          { postName: "profileBox" },
+          { postNameKr: "프로필함" },
+        ],
+      },
+      {
+        audition: [
+          { postLink: "#" },
+          { postName: "audition" },
+          { postNameKr: "오디션정보" },
+        ],
+      },
+      {
+        freePost: [
+          { postLink: "#" },
+          { postName: "freePost" },
+          { postNameKr: "자유게시판" },
         ],
       },
     ],
@@ -252,6 +324,7 @@ var communities = {
 };
 
 app.use(cors());
+
 app.get("/categories", (req, res) => {
   res.json(categories);
 });
