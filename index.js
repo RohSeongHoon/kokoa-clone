@@ -7,6 +7,7 @@ var categories = [
   {
     category: "actor",
     categoryKr: "연기",
+    categoryLink: "../test/community/actor.html",
     contents: [
       {
         videoPost: [
@@ -41,6 +42,7 @@ var categories = [
   {
     category: "musical",
     categoryKr: "뮤지컬",
+    categoryLink: "../test/community/musical.html",
     contents: [
       {
         videoPost: [
@@ -75,6 +77,7 @@ var categories = [
   {
     category: "vocal",
     categoryKr: "보컬",
+    categoryLink: "../test/community/vocal.html",
     contents: [
       {
         videoPost: [
@@ -109,6 +112,7 @@ var categories = [
   {
     category: "performer",
     categoryKr: "연주자",
+    categoryLink: "../test/community/performer.html",
     contents: [
       {
         videoPost: [
