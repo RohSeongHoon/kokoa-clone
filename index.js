@@ -9,34 +9,13 @@ var categories = [
     categoryKr: "연기",
     categoryLink: "../test/community/actor.html",
     contents: [
-      {
-        videoPost: [
-          { postLink: "#" },
-          { postName: "actorVideo" },
-          { postNameKr: "연기영상" },
-        ],
-      },
-      {
-        profileBox: [
-          { postLink: "#" },
-          { postName: "profileBox" },
-          { postNameKr: "프로필함" },
-        ],
-      },
-      {
-        audition: [
-          { postLink: "#" },
-          { postName: "audition" },
-          { postNameKr: "오디션정보" },
-        ],
-      },
-      {
-        freePost: [
-          { postLink: "#" },
-          { postName: "freePost" },
-          { postNameKr: "자유게시판" },
-        ],
-      },
+      { postLink: "#", postName: "actorVideo", postNameKr: "연기영상" },
+
+      { postLink: "#", postName: "profileBox", postNameKr: "프로필함" },
+
+      { postLink: "#", postName: "audition", postNameKr: "오디션정보" },
+
+      { postLink: "#", postName: "freePost", postNameKr: "자유게시판" },
     ],
   },
   {
@@ -44,69 +23,28 @@ var categories = [
     categoryKr: "뮤지컬",
     categoryLink: "../test/community/musical.html",
     contents: [
-      {
-        videoPost: [
-          { postLink: "#" },
-          { postName: "musicalVideo" },
-          { postNameKr: "뮤지컬영상" },
-        ],
-      },
-      {
-        profileBox: [
-          { postLink: "#" },
-          { postName: "profileBox" },
-          { postNameKr: "프로필함" },
-        ],
-      },
-      {
-        audition: [
-          { postLink: "#" },
-          { postName: "audition" },
-          { postNameKr: "오디션정보" },
-        ],
-      },
-      {
-        freePost: [
-          { postLink: "#" },
-          { postName: "freePost" },
-          { postNameKr: "자유게시판" },
-        ],
-      },
+      { postLink: "#", postName: "musicalVideo", postNameKr: "뮤지컬영상" },
+
+      { postLink: "#", postName: "profileBox", postNameKr: "프로필함" },
+
+      { postLink: "#", postName: "audition", postNameKr: "오디션정보" },
+
+      { postLink: "#", postName: "freePost", postNameKr: "자유게시판" },
     ],
   },
+
   {
     category: "vocal",
     categoryKr: "보컬",
     categoryLink: "../test/community/vocal.html",
     contents: [
-      {
-        videoPost: [
-          { postLink: "#" },
-          { postName: "vocalVideo" },
-          { postNameKr: "보컬영상" },
-        ],
-      },
-      {
-        profileBox: [
-          { postLink: "#" },
-          { postName: "profileBox" },
-          { postNameKr: "프로필함" },
-        ],
-      },
-      {
-        audition: [
-          { postLink: "#" },
-          { postName: "audition" },
-          { postNameKr: "오디션정보" },
-        ],
-      },
-      {
-        freePost: [
-          { postLink: "#" },
-          { postName: "freePost" },
-          { postNameKr: "자유게시판" },
-        ],
-      },
+      { postLink: "#", postName: "vocalVideo", postNameKr: "보컬영상" },
+
+      { postLink: "#", postName: "profileBox", postNameKr: "프로필함" },
+
+      { postLink: "#", postName: "audition", postNameKr: "오디션정보" },
+
+      { postLink: "#", postName: "freePost", postNameKr: "자유게시판" },
     ],
   },
   {
@@ -114,34 +52,13 @@ var categories = [
     categoryKr: "연주자",
     categoryLink: "../test/community/performer.html",
     contents: [
-      {
-        videoPost: [
-          { postLink: "#" },
-          { postName: "performerVideo" },
-          { postNameKr: "연주영상" },
-        ],
-      },
-      {
-        profileBox: [
-          { postLink: "#" },
-          { postName: "profileBox" },
-          { postNameKr: "프로필함" },
-        ],
-      },
-      {
-        audition: [
-          { postLink: "#" },
-          { postName: "audition" },
-          { postNameKr: "오디션정보" },
-        ],
-      },
-      {
-        freePost: [
-          { postLink: "#" },
-          { postName: "freePost" },
-          { postNameKr: "자유게시판" },
-        ],
-      },
+      { postLink: "#", postName: "performerVideo", postNameKr: "연주영상" },
+
+      { postLink: "#", postName: "profileBox", postNameKr: "프로필함" },
+
+      { postLink: "#", postName: "audition", postNameKr: "오디션정보" },
+
+      { postLink: "#", postName: "freePost", postNameKr: "자유게시판" },
     ],
   },
 ];
