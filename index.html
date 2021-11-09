@@ -16,7 +16,7 @@
   <body>
     <nav id="navbar-container">
       <div id="logo">
-        <h1><a class="logo__a" href="/index.html">배우 커뮤니티</a></h1>
+        <h1><a class="logo__a" href="/index.html">예체능 커뮤니티</a></h1>
       </div>
       <form id="search">
         <input type="text" placeholder="검색어를 입력하세요" />
@@ -122,22 +122,7 @@
         </li> -->
       </ul>
     </nav>
-    <div class="side-navbar">
-      <ul class="side-navbar__container">
-        <li class="side-navbar__container--list">
-          <a class="side-navbar__container--a" href="#">연기 영상</a>
-        </li>
-        <li class="side-navbar__container--list">
-          <a class="side-navbar__container--a" href="#">연기 커뮤니티</a>
-        </li>
-        <li class="side-navbar__container--list">
-          <a class="side-navbar__container--a" href="#">뮤지컬 영상</a>
-        </li>
-        <li class="side-navbar__container--list">
-          <a class="side-navbar__container--a" href="#">뮤지컬 커뮤니티</a>
-        </li>
-      </ul>
-    </div>
+    <div class="side-navbar" id="side-navbar"></div>
     <main>
       <h3 class="video-head">new</h3>
       <div class="video-container" id="video-container"></div>
@@ -212,6 +197,22 @@
             }
           }
         });
+        $.get("http://localhost:3000/sidebar", function (data) {
+          $("#side-navbar").append(
+            '<ul class="side-navbar__container" id="side-navbar__container">'
+          );
+          alert(data[0].categoryKr);
+          for (var i = 0; i < data.length; i++) {
+            $("#side-navbar__container").append(
+              '<li class="side-navbar__container--list">' +
+                '<a class="side-navbar__container--a" href="' +
+                data[i].categoryLink +
+                '">' +
+                data[i].categoryKr +
+                "</a>"
+            );
+          }
+        });
         $.get("http://localhost:3000/videos", function (data) {
           $("#video-container").append(
             ' <ul id="video-lists" class="video-lists" ></ul>'
@@ -234,7 +235,6 @@
             );
           } // i+1 뺴기
         });
-
         $.get("http://localhost:3000/posts", function (data) {
           for (var i = 0; i < data.communities.length; i++) {
             var community = data.communities[i];
