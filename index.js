@@ -3,6 +3,12 @@ const cors = require("cors");
 const app = express();
 const port = 3000;
 
+var sidebar = [
+  { category: "actor", categoryKr: "연기", categoryLink: "#" },
+  { category: "musical", categoryKr: "뮤지컬", categoryLink: "#" },
+  { category: "vocal", categoryKr: "보컬", categoryLink: "#" },
+  { category: "performer", categoryKr: "연주자", categoryLink: "#" },
+];
 var categories = [
   {
     category: "actor",
@@ -248,6 +254,9 @@ app.use(cors());
 
 app.get("/categories", (req, res) => {
   res.json(categories);
+});
+app.get("/sidebar", (req, res) => {
+  res.json(sidebar);
 });
 
 app.get("/videos", (req, res) => {
