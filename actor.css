@@ -1,11 +1,31 @@
-#video-post {
+.youtube-videos {
+  width: 400px;
+  height: 230px;
 }
 .video-post__list {
   display: flex;
   justify-content: center;
+  margin: 10px 5px;
 }
-.post--title {
+.post--container {
   margin: 10px;
   display: flex;
   flex-direction: column;
+}
+.post-title {
+  font-size: 25px;
+  font-weight: 19;
+  margin-bottom: 40px;
+}
+.post-writer {
+  position: relative;
+  top: 120px;
+  left: 10px;
+}
+.post-comment {
+}
+.post-views {
+  position: relative;
+  top: 88px;
+  left: 300px;
 }
