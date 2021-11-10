@@ -1,14 +1,11 @@
-.community-main {
-  width: 1130px;
-  margin: 0px auto;
-  display: flex;
-  position: relative;
+#video-post {
 }
-
-.video__container {
+.video-post__list {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 30px;
   justify-content: center;
+}
+.post--title {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
