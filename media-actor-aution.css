@@ -1,3 +1,9 @@
+.category-head {
+  color: rgb(41, 40, 40);
+  margin: 15px;
+  font-weight: 600;
+  font-size: 30px;
+}
 #community-table {
   width: 100%;
 }
