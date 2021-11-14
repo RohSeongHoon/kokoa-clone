@@ -128,6 +128,9 @@
         </thead>
         <tbody id="table-body"></tbody>
       </table>
+      <button type="submit" class="write-button">
+        <a href="./musical.html">글쓰기</a>
+      </button>
     </main>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script>
@@ -139,19 +142,19 @@
               $("#table-body").append(
                 '<tr class="community-table-body">' +
                   '<td class="body-item community-post-title">' +
-                  '<a href="#">' +
+                  '<a class="a-scope" href="#">' +
                   element.title +
-                  '<span class="post-number-of-comments">' +
+                  '<span class="number-color">' +
                   element.numberOfComment +
                   "</span>" +
                   "</a>" +
                   "</td>" +
                   '<td class="body-item community-post-writer">' +
-                  '<a href="#">' +
+                  '<a class="a-scope" href="#">' +
                   element.writer +
                   "</a>" +
                   "</td>" +
-                  '<td class="body-item community-post-views">' +
+                  '<td class="body-item community-post-views number-color">' +
                   element.views +
                   "</td>" +
                   "</tr>"
