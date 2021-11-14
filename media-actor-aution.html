@@ -126,36 +126,40 @@
             <td id="head-views" class="head-item">조회수</td>
           </tr>
         </thead>
-        <tbody id="table-body">
-          <tr class="community-table-body">
-            <td class="body-item community-post-title">
-              <a href="#">게시물제목<span> 댓글수</span></a>
-            </td>
-            <td class="body-item community-post-writer">
-              <a href="#">작성자</a>
-            </td>
-            <td class="body-item community-post-views">조회수</td>
-          </tr>
-          <tr class="body-item community-table-body">
-            <td class="body-item community-post-title">
-              <a href="#">게시물제목<span> 댓글수</span></a>
-            </td>
-            <td class="body-item community-post-writer">
-              <a href="#">작성자</a>
-            </td>
-            <td class="body-item community-post-views">조회수</td>
-          </tr>
-          <tr class="body-item community-table-body">
-            <td class="body-item community-post-title">
-              <a href="#">게시물제목<span> 댓글수</span></a>
-            </td>
-            <td class="body-item community-post-writer">
-              <a href="#">작성자</a>
-            </td>
-            <td class="body-item community-post-views">조회수</td>
-          </tr>
-        </tbody>
+        <tbody id="table-body"></tbody>
       </table>
     </main>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.get(
+          "http://localhost:3000/categories/mediaAudition",
+          function (data) {
+            data.forEach((element) => {
+              $("#table-body").append(
+                '<tr class="community-table-body">' +
+                  '<td class="body-item community-post-title">' +
+                  '<a href="#">' +
+                  element.title +
+                  '<span class="post-number-of-comments">' +
+                  element.numberOfComment +
+                  "</span>" +
+                  "</a>" +
+                  "</td>" +
+                  '<td class="body-item community-post-writer">' +
+                  '<a href="#">' +
+                  element.writer +
+                  "</a>" +
+                  "</td>" +
+                  '<td class="body-item community-post-views">' +
+                  element.views +
+                  "</td>" +
+                  "</tr>"
+              );
+            });
+          }
+        );
+      });
+    </script>
   </body>
 </html>
